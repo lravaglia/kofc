@@ -1,0 +1,33 @@
+.card-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 1 / 1.5;
+    width: 256px;
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.text-container {
+    width: 256px;
+}
+
+.hero-container {
+    width: 256px;
+    height: 256px;
+}
+
+.text {
+    margin: 0.5rem;
+    text-align: justify;
+    text-justify: inter-cluster;
+}

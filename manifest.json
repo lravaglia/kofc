@@ -1,0 +1,21 @@
+{
+  "name": "Knights of Columbus Introduction Page",
+  "short_name": "KofC Introduction",
+  "description": "An introduction to the Knights of Columbus Council #XXXXX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9f6f4",
+  "theme_color": "#f9f6f4",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
