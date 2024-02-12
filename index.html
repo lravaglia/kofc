@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="charset" http-equiv="content-type" content="utf8">
+    <meta name="keywords" content="council, columbus, knights, fraternal, organisation, volunteer, catholic"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css"/>
+    <script type="module" src="/main.js"></script>
+
+    <title>Knights of Columbus Council</title>
+
+    <script>
+        /**
+         * @function select
+         * @param {number} index
+         * @returns void
+         */
+        const select = (index) => {
+            const heroCards = document.querySelectorAll("hero-card")
+            heroCards.forEach((card, i) => {
+                card.style.setProperty("--offset", "" + -1 * (index - 1 - i))
+                if (i === index - 1) {
+                    card.dataset.selected = "true";
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+<header>
+    <h1>Knights of Columbus</h1>
+</header>
+<main>
+    <hero-card onclick="select(1)" style="--offset: -2">
+        <img slot="hero" alt="Hero image" src="https://placehold.co/256/svg" style="
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    "/>
+        <p slot="text">Leftmost</p>
+    </hero-card>
+    <hero-card onclick="select(2)" style="--offset: -1">
+        <img slot="hero" alt="Hero image" src="https://placehold.co/256/svg" style="
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    "/>
+        <p slot="text">Left</p>
+    </hero-card>
+    <hero-card onclick="select(3)" style="--offset: 0">
+        <img slot="hero" alt="Hero image" src="https://placehold.co/256/svg" style="
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    "/>
+        <p slot="text">Centre</p>
+    </hero-card>
+    <hero-card onclick="select(4)" style="--offset: 1">
+        <img slot="hero" alt="Hero image" src="https://placehold.co/256/svg" style="
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    "/>
+        <p slot="text">Right</p>
+    </hero-card>
+    <hero-card onclick="select(5)" style="--offset: 2">
+        <img slot="hero" alt="Hero image" src="https://placehold.co/256/svg" style="
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    "/>
+        <p slot="text">Rightmost</p>
+    </hero-card>
+</main>
+</body>
+
+</html>
