@@ -4,7 +4,7 @@
  */
 export default class HeroCard extends HTMLElement {
   static template = /* HTML */ `
-    <link rel="stylesheet" href="/hero-card/styles.css" />
+    <link rel="stylesheet" href="hero-card/styles.css" />
     <div class="card-root">
       <div class="card">
         <div class="hero-container">

@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("/Inter.woff2") format("woff2");
+  src: url("Inter.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -37,27 +37,33 @@ html {
 /* 16px */
 
 h1 {
-  font-size: 4.21rem; /* 67.36px */
+  font-size: 4.21rem;
+  /* 67.36px */
 }
 
 h2 {
-  font-size: 3.158rem; /* 50.56px */
+  font-size: 3.158rem;
+  /* 50.56px */
 }
 
 h3 {
-  font-size: 2.369rem; /* 37.92px */
+  font-size: 2.369rem;
+  /* 37.92px */
 }
 
 h4 {
-  font-size: 1.777rem; /* 28.48px */
+  font-size: 1.777rem;
+  /* 28.48px */
 }
 
 h5 {
-  font-size: 1.333rem; /* 21.28px */
+  font-size: 1.333rem;
+  /* 21.28px */
 }
 
 small {
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.75rem;
+  /* 12px */
 }
 
 p,
@@ -69,9 +75,7 @@ video {
 
 hero-card {
   position: absolute;
-  transform: translateX(calc(50vw - 130px + var(--offset) * 276px))
-    rotate(calc(2deg * var(--offset)))
-    translateY(calc(1rem * max(var(--offset), calc(-1 * var(--offset)))));
+  transform: translateX(calc(50vw - 130px + var(--offset) * 276px)) rotate(calc(2deg * var(--offset))) translateY(calc(1rem * max(var(--offset), calc(-1 * var(--offset)))));
 }
 
 hero-card[data-selected="true"] {

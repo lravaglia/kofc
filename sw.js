@@ -3,10 +3,10 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("v1").then((cache) => {
       return cache.addAll([
-        "/index.html",
-        "/Inter.woff2",
-        "/favicon.ico",
-        "/styles.css",
+        "index.html",
+        "Inter.woff2",
+        "favicon.ico",
+        "styles.css",
       ]);
     })
   );
