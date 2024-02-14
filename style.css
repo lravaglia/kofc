@@ -78,8 +78,18 @@ hero-card {
   transform: translateX(calc(50vw - 130px + var(--offset) * 276px)) rotate(calc(2deg * var(--offset))) translateY(calc(1rem * max(var(--offset), calc(-1 * var(--offset)))));
 }
 
+@keyframes bg {
+  from {
+    box-shadow: 0 0 0 0 var(--accent);
+  }
+  to {
+    box-shadow: 4px 8px 0 4px var(--accent);
+  }
+}
+
 hero-card[data-selected="true"] {
-  box-shadow: 4px 8px 0 4px var(--accent);
+  animation-name: bg;
+  animation-duration: 2s;
   border-radius: 8px;
 }
 
