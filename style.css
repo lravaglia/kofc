@@ -80,7 +80,7 @@ hero-card {
 
 @keyframes bg {
   from {
-    box-shadow: 0 0 0 0 var(--accent);
+    box-shadow: 0 0 0 4px var(--accent);
   }
   to {
     box-shadow: 4px 8px 0 4px var(--accent);
@@ -90,6 +90,7 @@ hero-card {
 hero-card[data-selected="true"] {
   animation-name: bg;
   animation-duration: 2s;
+  box-shadow: 4px 8px 0 4px var(--accent);
   border-radius: 8px;
 }
 
